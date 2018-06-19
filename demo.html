@@ -52,8 +52,8 @@
                         gv.nodes().click(function () {
                             var $set = $()
                             $set.push(this)
-                            //$set = $set.add(gv.linkedFrom(this, true))
-                            $set = $set.add(gv.linkedTo(this, true))
+                            $set = $set.add(gv.linkedFrom(this, true))
+                            //$set = $set.add(gv.linkedTo(this, true))
                             gv.highlight($set, true)
                             gv.bringToFront($set)
                         })
